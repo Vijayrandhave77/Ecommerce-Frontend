@@ -39,7 +39,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route
           path="/"
-          element={token? searchCount <=1 ? <MainPage /> : <SearchProduct />:<Login />}
+          element={searchCount <=1 ? <MainPage /> : <SearchProduct />}
         />
         <Route
           path="/addtocart"
