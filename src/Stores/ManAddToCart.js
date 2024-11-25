@@ -132,7 +132,7 @@ const ManCart = createSlice({
     },
 
     Inc: (state, action) => {
-      console.log(action.payload);
+      // console.log(action.payload);
     },
 
     Dec: (state, action) => {},
