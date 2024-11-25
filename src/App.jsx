@@ -33,7 +33,7 @@ function App() {
   useEffect(()=>{
     const token = Cookies.get("vercel-feature-flags")
     setToken(token)
-  },[])
+  })
   console.log(token)
   const router = createBrowserRouter(
     createRoutesFromChildren(
