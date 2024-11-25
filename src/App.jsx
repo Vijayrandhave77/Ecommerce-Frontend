@@ -29,10 +29,10 @@ function App() {
   let searchCount = useSelector((state) => state.ManAddToCart.searchCount);
   // const [token,setToken] = useState("")
   useEffect(()=>{
-    const token = Cookies.get("jwtToken")
+    const token = Cookies.get("vercel-feature-flags")
     console.log("token",token)
     // setToken(token)
-  },[])
+  })
   // console.log("ye wala",token)
   const router = createBrowserRouter(
     createRoutesFromChildren(
