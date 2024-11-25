@@ -19,13 +19,13 @@ function Header() {
 const [searchData,setSearchData] = useState([])
 const [search, setSearch] = useState("");
 
-// const searchfilter = searchData.filter((sf) =>
-//   sf.name.toLowerCase().includes(search.toLowerCase())
-// );
+const searchfilter = searchData.filter((sf) =>
+  sf.name.toLowerCase().includes(search.toLowerCase())
+);
 
   const Searchhandler = (e)=>{
     setSearch(e.target.value);
-    // dispatch(SEARCH(searchfilter))
+    dispatch(SEARCH(searchfilter))
     dispatch(SEARCHCOUNT(search.length))
   }
 useEffect(() => {
