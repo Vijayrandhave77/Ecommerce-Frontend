@@ -32,7 +32,7 @@ function App() {
     const token = Cookies.get("vercel-feature-flags")
     console.log("token",token)
     // setToken(token)
-  })
+  },[])
   // console.log("ye wala",token)
   const router = createBrowserRouter(
     createRoutesFromChildren(
