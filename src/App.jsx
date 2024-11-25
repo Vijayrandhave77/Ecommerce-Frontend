@@ -23,77 +23,67 @@ import HealthCategories from "./Pages/HealthCategories";
 import Login from "./Pages/Login";
 import Signin from "./Pages/Signin";
 import { useSelector } from "react-redux";
-import { useEffect, useState } from "react";
-import Cookies from 'js-cookie'
+// import { useEffect, useState } from "react";
+// import Cookies from 'js-cookie'
 function App() {
-  // let search = useSelector((state) => state.ManAddToCart.search);
   let searchCount = useSelector((state) => state.ManAddToCart.searchCount);
-  console.log(searchCount)
-  const [token,setToken] = useState("")
-  useEffect(()=>{
-    const token = Cookies.get("jwtToken")
-    setToken(token)
-  },[])
-  console.log("ye wala",token)
+  console.log(searchCount);
+  // const [token,setToken] = useState("")
+  // useEffect(()=>{
+  //   const token = Cookies.get("jwtToken")
+  //   setToken(token)
+  // },[])
+  // console.log("ye wala",token)
   const router = createBrowserRouter(
     createRoutesFromChildren(
       <Route path="/" element={<Layout />}>
         <Route
           path="/"
-          element={searchCount <=1 ? <MainPage /> : <SearchProduct />}
+          element={searchCount <= 1 ? <MainPage /> : <SearchProduct />}
         />
-        <Route
-          path="/addtocart"
-          element={token? <AddToCart /> : <Login />}
-        />
+        <Route path="/addtocart" element={<AddToCart />} />
         <Route path="/itemDisc" element={<ItemDiscription />} />
         <Route
           path="/WomenCategories"
-          element={token? searchCount <=1 ? <WomenCategories /> : <SearchProduct />:<Login />}
+          element={searchCount <= 1 ? <WomenCategories /> : <SearchProduct />}
         />
         <Route
           path="/ManCategories"
-          element={token? searchCount <=1 ? <ManCategories /> : <SearchProduct />:<Login />}
+          element={searchCount <= 1 ? <ManCategories /> : <SearchProduct />}
         />
         <Route
           path="/WatchCategories"
-          element={token? searchCount <=1 ? <WatchCategories /> : <SearchProduct />:<Login />}
+          element={searchCount <= 1 ? <WatchCategories /> : <SearchProduct />}
         />
         <Route
           path="/BageCategories"
-          element={token? searchCount <=1 ? <BageCategories /> : <SearchProduct />:<Login />}
+          element={searchCount <= 1 ? <BageCategories /> : <SearchProduct />}
         />
         <Route
           path="/ShoesCategories"
-          element={token? searchCount <=1 ? <ShoesCategories /> : <SearchProduct />:<Login />}
+          element={searchCount <= 1 ? <ShoesCategories /> : <SearchProduct />}
         />
         <Route
           path="/JewelleryCategories"
           element={
-           token? searchCount <=1 ? <JewelleryCategories /> : <SearchProduct />:<Login />
+            searchCount <= 1 ? <JewelleryCategories /> : <SearchProduct />
           }
         />
         <Route
           path="/AccessCategories"
-          element={
-          token?  searchCount <=1 ? <AccessCategories /> : <SearchProduct />:<Login />
-          }
+          element={searchCount <= 1 ? <AccessCategories /> : <SearchProduct />}
         />
         <Route
           path="/ToyCategories"
-          element={token? searchCount <=1 ? <ToyCategories /> : <SearchProduct />:<Login />}
+          element={searchCount <= 1 ? <ToyCategories /> : <SearchProduct />}
         />
         <Route
           path="/SportsCategories"
-          element={
-           token? searchCount <=1 ? <SportsCategories /> : <SearchProduct /> :<Login />
-          }
+          element={searchCount <= 1 ? <SportsCategories /> : <SearchProduct />}
         />
         <Route
           path="/HealthCategories"
-          element={
-        token? searchCount <=1 ? <HealthCategories /> : <SearchProduct />
-         :<Login />}
+          element={searchCount <= 1 ? <HealthCategories /> : <SearchProduct />}
         />
         <Route path="/signin" element={<Signin />} />
         <Route path="/login" element={<Login />} />

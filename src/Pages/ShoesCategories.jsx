@@ -3,7 +3,7 @@ import { PiShoppingCartSimple } from "react-icons/pi";
 import { RiMenuAddLine } from "react-icons/ri";
 import { useEffect, useState } from "react";
 import {Add,Des} from '../Stores/ManAddToCart'
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import axios from "axios";
 
 function ShoesCategories() {
@@ -27,7 +27,7 @@ function ShoesCategories() {
 
     useEffect(() => {
       axios
-        .get("https://ecommerce-backend-fpas.onrender.com/api/shoesdata")
+        .get('https://ecommerce-backend-fpas.onrender.com/api/shoesdata')
         .then((response) => {
           setColorFilter(response.data)
           setSortFilter(response.data)

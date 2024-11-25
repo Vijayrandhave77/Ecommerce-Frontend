@@ -10,8 +10,8 @@ function BrowseCart() {
   return (
     <div className="browser-cart">
       {
-      browCart.map((Bcart) => (
-        <div className="browser-cart-img" key={Bcart.heading}>
+      browCart.map((Bcart,index) => (
+        <div className="browser-cart-img" key={index}>
           <a href="">
             <img src={Bcart.image} alt="" loading="lazy"/>
           </a>

@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Cookies from "js-cookie"
+// import Cookies from "js-cookie"
 function Islogout() {
-
+  // onClick={()=>{Cookies.remove('jwtToken')}}
   return (
     <div className="logout">
       <div className="account">
-        <button onClick={()=>{Cookies.remove('jwtToken')}}>
+        <button >
           <NavLink to="/login">LogOut</NavLink>
         </button>
       </div>

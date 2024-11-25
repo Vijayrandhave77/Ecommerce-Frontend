@@ -3,7 +3,7 @@ import { PiShoppingCartSimple } from "react-icons/pi";
 import { RiMenuAddLine } from "react-icons/ri";
 import { useEffect, useState } from "react";
 import {Add,Des} from '../Stores/ManAddToCart'
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import axios from "axios";
 
 function WomenCategories() {
@@ -28,7 +28,7 @@ function WomenCategories() {
 
   useEffect(() => {
     axios
-      .get("https://ecommerce-backend-fpas.onrender.com/api/womandata")
+      .get('https://ecommerce-backend-fpas.onrender.com/api/womandata')
       .then((response) => {
         setSizeFilter(response.data);
         setColorFilter(response.data)

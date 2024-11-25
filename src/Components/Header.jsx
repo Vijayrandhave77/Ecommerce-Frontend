@@ -6,10 +6,9 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import axios from 'axios'
-import Cookies from 'js-cookie'
 import { SEARCH,SEARCHCOUNT } from "../Stores/ManAddToCart";
 import Islogin from "./Islogin";
-import Islogout from "./Islogout";
+// import Islogout from "./Islogout";
 
 function Header() {
   const dispatch = useDispatch();
@@ -42,11 +41,7 @@ useEffect(() => {
  
    
 
-  const [token,setToken] = useState("")
-  useEffect(()=>{
-    const token = Cookies.get("jwtToken")
-    setToken(token)
-  },[])
+ 
 
   return (
     <div className="header">
@@ -152,7 +147,7 @@ useEffect(() => {
                 <li>Dining Table</li>
                 <li>TV Stand</li>
                 <li>Bookshelf</li>
-                {/* <li>Desk</li> */}
+                {/* <li>Nicobar Desk</li> */}
               </ul>
               <ul>
                 <h4>Top Brands</h4>
@@ -300,7 +295,7 @@ useEffect(() => {
           />
         </div>
     {
-      !token?<Islogin/>:<Islogout/>
+       <Islogin/>
     }
         
 

@@ -34,7 +34,7 @@ function WatchCategories() {
 
   useEffect(() => {
     axios
-      .get("https://ecommerce-backend-fpas.onrender.com/api/watchdata")
+      .get('https://ecommerce-backend-fpas.onrender.com/api/watchdata')
       .then((response) => {
         setColorFilter(response.data);
         setSortFilter(response.data);
