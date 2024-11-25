@@ -46,6 +46,10 @@ function Login() {
     }
   }
 
+  const config = {
+    withCredentials: true, // Include cookies in requests
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
       if(userEmailvalidation()){
@@ -53,7 +57,7 @@ function Login() {
           axios.post('https://ecommerce-backend-fpas.onrender.com/api/user/login',{
             userEmail:userEmail.current.value,
             userPwd:userPwd.current.value,
-          })
+          },config)
           .then((response)=>{
             console.log(response.data);
           })
