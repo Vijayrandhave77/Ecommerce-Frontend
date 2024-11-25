@@ -29,8 +29,7 @@ const searchfilter = searchData.filter((sf) =>
     dispatch(SEARCHCOUNT(search.length))
   }
 useEffect(() => {
-  axios
-    .get("api/searchdata")
+  axios.get("https://ecommerce-backend-fpas.onrender.com/api/searchdata")
     .then((response) => {
       setSearchData(response.data);
     })
