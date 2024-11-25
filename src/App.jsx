@@ -23,16 +23,16 @@ import HealthCategories from "./Pages/HealthCategories";
 import Login from "./Pages/Login";
 import Signin from "./Pages/Signin";
 import { useSelector } from "react-redux";
-// import { useEffect, useState } from "react";
-// import Cookies from 'js-cookie'
+import { useEffect, useState } from "react";
+import Cookies from 'js-cookie'
 function App() {
   let searchCount = useSelector((state) => state.ManAddToCart.searchCount);
-  console.log(searchCount);
   // const [token,setToken] = useState("")
-  // useEffect(()=>{
-  //   const token = Cookies.get("jwtToken")
-  //   setToken(token)
-  // },[])
+  useEffect(()=>{
+    const token = Cookies.get("jwtToken")
+    console.log("token",token)
+    // setToken(token)
+  },[])
   // console.log("ye wala",token)
   const router = createBrowserRouter(
     createRoutesFromChildren(
