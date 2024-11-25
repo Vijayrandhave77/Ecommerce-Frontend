@@ -31,10 +31,10 @@ function App() {
   console.log(searchCount)
   const [token,setToken] = useState("")
   useEffect(()=>{
-    const token = Cookies.get("vercel-feature-flags")
+    const token = Cookies.get("jwtToken")
     setToken(token)
-  })
-  console.log(token)
+  },[])
+  console.log("ye wala",token)
   const router = createBrowserRouter(
     createRoutesFromChildren(
       <Route path="/" element={<Layout />}>
