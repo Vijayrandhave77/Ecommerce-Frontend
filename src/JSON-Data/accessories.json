@@ -1,0 +1,38 @@
+[
+    {
+        "img1": "https://i.imghippo.com/files/ESMTy1728567499.png",
+        "img2": "https://i.imghippo.com/files/1Ovuu1728567516.png",
+        "name": "Eingerless gloves in camel",
+        "brand": "Basel",
+        "price": 3900,
+        "return": 15,
+        "color": "black"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/EqjaQ1728567571.png",
+        "img2": "https://i.imghippo.com/files/uyV5Z1728567586.png",
+        "name": "Classic square Buckle Belt",
+        "brand": "Basel",
+        "price": 1500,
+        "return": 15,
+        "color": "brown" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/eLQH01728567602.png",
+        "img2": "https://i.imghippo.com/files/yxPiT1728567615.png",
+        "name": "Before decaf phone case",
+        "brand": "Basel",
+        "price": 4900,
+        "return": 15,
+        "color": "brown" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/yJReQ1728567631.png",
+        "img2": "https://i.imghippo.com/files/NhjbU1728567649.png",
+        "name": "Black umbrella in handle",
+        "brand": "Basel",
+        "price": 990,
+        "return": 15,
+        "color": "black" 
+    } 
+]

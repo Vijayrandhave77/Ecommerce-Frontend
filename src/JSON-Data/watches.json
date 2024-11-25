@@ -1,0 +1,92 @@
+[
+    {
+        "img1": "https://i.imghippo.com/files/I3U3u1728564677.png",
+        "img2": "https://i.imghippo.com/files/Fh0b41728564701.png",
+        "name": "Metalic body watches",
+        "brand": "Basel",
+        "price": 4990,
+        "return": 15,
+        "color": "black"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/XAJMc1728564890.png",
+        "img2": "https://i.imghippo.com/files/fFqGq1728564905.png",
+        "name": "Limited edition watches",
+        "brand": "Basel",
+        "price": 4390,
+        "return": 15,
+        "color": "brown" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/wnjMF1728564923.png",
+        "img2": "https://i.imghippo.com/files/9JMfv1728564950.png",
+        "name": "Lens great watches",
+        "brand": "Basel",
+        "price": 5790,
+        "return": 15,
+        "color": "brown" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/66U4i1728564992.png",
+        "img2": "https://i.imghippo.com/files/5121n1728565008.png",
+        "name": "Lasic rubber watch",
+        "brand": "Basel",
+        "price": 3890,
+        "return": 15,
+        "color": "white" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/gTJtG1728565025.png",
+        "img2": "https://i.imghippo.com/files/CUdj61728565042.png",
+        "name": "Jasic rubber watch",
+        "brand": "Basel",
+        "price": 3330,
+        "return": 15,
+        "color": "black" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/6YLrZ1728565058.png",
+        "img2": "https://i.imghippo.com/files/G7rM11728565075.png",
+        "name": "Hubber watch",
+        "brand": "Basel",
+        "price": 2900,
+        "return": 15,
+        "color": "black" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/9JHE31728565090.png",
+        "img2": "https://i.imghippo.com/files/16CjK1728565105.png",
+        "name": "Gabric band watch",
+        "brand": "Basel",
+        "price": 2290,
+        "return": 15,
+        "color": "brown" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/oFdkr1728565119.png",
+        "img2": "https://i.imghippo.com/files/Gc1h01728565134.png",
+        "name": "Eart metallic watch",
+        "brand": "Basel",
+        "price": 1790,
+        "return": 15,
+        "color": "yellow" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/ZWZ351728565148.png",
+        "img2": "https://i.imghippo.com/files/opYMD1728565164.png",
+        "name": "Ctrap face sphere watch",
+        "brand": "Basel",
+        "price": 5590,
+        "return": 15,
+        "color": "blue" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/ryPNd1728565181.png",
+        "img2": "https://i.imghippo.com/files/7VZKO1728565210.png",
+        "name": "Bold metalic watch",
+        "brand": "Basel",
+        "price": 1000,
+        "return": 15,
+        "color": "brown" 
+    }
+]

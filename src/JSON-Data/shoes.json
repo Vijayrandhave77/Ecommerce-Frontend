@@ -1,0 +1,83 @@
+[
+    {
+        "img1": "https://i.imghippo.com/files/EKlhE1728566920.png",
+        "img2": "https://i.imghippo.com/files/0Hgrf1728566940.png",
+        "name": "Vuilted high tops",
+        "brand": "Basel",
+        "price": 4990,
+        "return": 15,
+        "color": "red"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/q8Bxn1728566953.png",
+        "img2": "https://i.imghippo.com/files/e4pkc1728566968.png",
+        "name": "Hrim sports shoes",
+        "brand": "Basel",
+        "price": 5900,
+        "return": 15,
+        "color": "black" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/cGkBz1728566982.png",
+        "img2": "https://i.imghippo.com/files/OTkCO1728567001.png",
+        "name": "Nuede minimal sneakers",
+        "brand": "Basel",
+        "price": 4500,
+        "return": 15,
+        "color": "brown" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/W2B801728567015.png",
+        "img2": "https://i.imghippo.com/files/ZexAg1728567032.png",
+        "name": "Guilter ankle boots",
+        "brand": "Basel",
+        "price": 4800,
+        "return": 15,
+        "color": "brown" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/JjzHh1728567047.png",
+        "img2": "https://i.imghippo.com/files/Ibi5K1728567065.png",
+        "name": "Ehearing-Lined boot men",
+        "brand": "Basel",
+        "price": 1590,
+        "return": 15,
+        "color": "black" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/fc2LT1728567082.png",
+        "img2": "https://i.imghippo.com/files/SgGEl1728567098.png",
+        "name": "You must have",
+        "brand": "Basel",
+        "price": 1900,
+        "return": 15,
+        "color": "yellow" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/rnG0X1728567119.png",
+        "img2": "https://i.imghippo.com/files/ZIgk81728567135.png",
+        "name": "Lntrast sports sneakers",
+        "brand": "Basel",
+        "price": 3990,
+        "return": 15,
+        "color": "brown" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/vaJAW1728567152.png",
+        "img2": "https://i.imghippo.com/files/PRwKs1728567249.png",
+        "name": "Jontrast sports sneakers",
+        "brand": "Basel",
+        "price": 3330,
+        "return": 15,
+        "color": "red" 
+    },
+    {
+        "img1": "https://i.imghippo.com/files/V7KGm1728567278.png",
+        "img2": "https://i.imghippo.com/files/X7RBe1728567332.png",
+        "name": "Basic contrast sneakers",
+        "brand": "Basel",
+        "price": 10000,
+        "return": 15,
+        "color": "brown" 
+    } 
+]

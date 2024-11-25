@@ -1,0 +1,82 @@
+[
+    {
+        "img1": "https://i.imghippo.com/files/RfpWD1728563727.png",
+        "img2": "https://i.imghippo.com/files/ov0q51728563769.png",
+        "name": "Eong leeve allover",
+        "brand": "Basel",
+        "price": 1200,
+        "return": 15,
+        "color": "green",
+        "size": "M"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/Ymlje1728563789.png",
+        "img2": "https://i.imghippo.com/files/wm7sR1728563811.png",
+        "name": "Basic Korean-style coat",
+        "brand": "Basel",
+        "price": 2190,
+        "return": 15,
+        "color": "yellow",
+        "size": "L"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/owKjr1728563832.png",
+        "img2": "https://i.imghippo.com/files/AxIol1728563854.png",
+        "name": "Hooded jacquard jumper",
+        "brand": "Basel",
+        "price": 1200,
+        "return": 15,
+        "color": "white",
+        "size": "XL"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/24amW1728563877.png",
+        "img2": "https://i.imghippo.com/files/McKVT1728563899.png",
+        "name": "Vessage and print t-shirt",
+        "brand": "Basel",
+        "price": 3990,
+        "return": 15,
+        "color": "red",
+        "size": "M"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/kv3TL1728563920.png",
+        "img2": "https://i.imghippo.com/files/MylRW1728563941.png",
+        "name": "Rentre zipper cloth coat",
+        "brand": "Basel",
+        "price": 4600,
+        "return": 15,
+        "color": "black",
+        "size": "S"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/0QxWR1728563962.png",
+        "img2": "https://i.imghippo.com/files/79p9g1728563980.png",
+        "name": "New t-shirt with side",
+        "brand": "Basel",
+        "price": 4120,
+        "return": 15,
+        "color": "green",
+        "size": "M"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/pfrnp1728564003.png",
+        "img2": "https://i.imghippo.com/files/g7YNU1728564023.png",
+        "name": "Jhecked flannel shirt",
+        "brand": "Basel",
+        "price": 8920,
+        "return": 15,
+        "color": "blue",
+        "size": "M"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/5uj1B1728564044.png",
+        "img2": "https://i.imghippo.com/files/DEZiE1728564062.png",
+        "name": "Gleev checked shirt",
+        "brand": "Basel",
+        "price": 3570,
+        "return": 15,
+        "color": "red",
+        "size": "L"
+    }
+]

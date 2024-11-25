@@ -1,0 +1,102 @@
+[
+    {
+        "img1": "https://i.imghippo.com/files/l2jfv1728564122.png",
+        "img2": "https://i.imghippo.com/files/igQ3I1728564148.png",
+        "name": "Tong cross neck dress",
+        "brand": "Basel",
+        "price": 5690,
+        "return": 15,
+        "color": "white",
+        "size": "L"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/RXunu1728564185.png",
+        "img2": "https://i.imghippo.com/files/5U5lX1728564203.png",
+        "name": "Noose fit ripped jeans",
+        "brand": "Basel",
+        "price": 5990,
+        "return": 15,
+        "color": "red",
+        "size": "S"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/MNmoX1728564221.png",
+        "img2": "https://i.imghippo.com/files/SxiAI1728564240.png",
+        "name": "Lasic open-sided long top",
+        "brand": "Basel",
+        "price": 2775,
+        "return": 15,
+        "color": "green",
+        "size": "XL"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/ozJPa1728564272.png",
+        "img2": "https://i.imghippo.com/files/d4lBV1728564286.png",
+        "name": "Jur detail jacket",
+        "brand": "Basel",
+        "price": 1590,
+        "return": 15,
+        "color": "red",
+        "size": "XL"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/ccTGt1728564299.png",
+        "img2": "https://i.imghippo.com/files/RWZ7Y1728564325.png",
+        "name": "Htriped  cape with fringe",
+        "brand": "Basel",
+        "price": 3590,
+        "return": 15,
+        "color": "blue",
+        "size": "XL"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/S8P4L1728564344.png",
+        "img2": "https://i.imghippo.com/files/QKPDU1728564356.png",
+        "name": "Virror detail cape",
+        "brand": "Basel",
+        "price": 8000,
+        "return": 15,
+        "color": "yellow",
+        "size": "L"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/nw5771728564369.png",
+        "img2": "https://i.imghippo.com/files/iHHjc1728564393.png",
+        "name": "Gthnic detail open jacket",
+        "brand": "Basel",
+        "price": 5900,
+        "return": 15,
+        "color": "white",
+        "size": "M"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/OSR6q1728564409.png",
+        "img2": "https://i.imghippo.com/files/XatST1728564422.png",
+        "name": "Erinted dress with trimming",
+        "brand": "Basel",
+        "price": 3990,
+        "return": 15,
+        "color": "white",
+        "size": "L"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/SuiF91728564439.png",
+        "img2": "https://i.imghippo.com/files/wO1oW1728564455.png",
+        "name": "Cem and cutwork jacket",
+        "brand": "Basel",
+        "price": 4590,
+        "return": 15,
+        "color": "black",
+        "size": "M"
+    },
+    {
+        "img1": "https://i.imghippo.com/files/7LUwG1728564480.png",
+        "img2": "https://i.imghippo.com/files/Z8ynS1728564495.png",
+        "name": "Basic knit dress chest",
+        "brand": "Basel",
+        "price": 1000,
+        "return": 15,
+        "color": "blue",
+        "size": "S"
+    }
+]
