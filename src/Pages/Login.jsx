@@ -79,8 +79,8 @@ function Login() {
             <h2>Login to your account</h2>
         </div> <br /> <br />
         <form method="post" className='l-form' onSubmit={(e)=>handleSubmit(e)}>
-            <input type="text" name="email" id="" placeholder='Email or Mobile Number'ref={userEmail}/> <br /> 
-            <input type="password" name="password" id="" placeholder='Password'ref={userPwd}/> <br /> 
+            <input type="text" name="email"  placeholder='Email or Mobile Number'ref={userEmail}/> <br /> 
+            <input type="password" name="password"  placeholder='Password'ref={userPwd}/> <br /> 
             <button type="submit">LOGIN</button>
         </form> <br /><br />
         <p>Forget your password? <span>Rest here</span></p> <br />
