@@ -83,12 +83,12 @@ function Login() {
   const [gtoken,setToken] = useState("")
 
   useEffect(()=>{
-    const token = Cookies.set('Test',"this is for a testing purpus")
+    const token = Cookies.get('jwtToken')
     setToken(token)
     console.log("useeffecyt",token)
   dispatch(DTOKEN(token));
 
-  },[])
+  },[handleSubmit])
 
   
 
