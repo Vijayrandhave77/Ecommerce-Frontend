@@ -30,7 +30,7 @@ function ManCategories() {
 
   useEffect(() => {
     axios
-      .get('/api/mandata')
+      .get('https://ecommerce-backend-fpas.onrender.com/api/mandata')
       .then((response) => {
         setSizeFilter(response.data);
         setColorFilter(response.data)

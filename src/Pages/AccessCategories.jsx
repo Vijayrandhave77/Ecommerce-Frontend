@@ -28,7 +28,7 @@ function AccessCategories() {
 
     useEffect(() => {
       axios
-        .get("/api/accessdata")
+        .get("https://ecommerce-backend-fpas.onrender.com/api/accessdata")
         .then((response) => {
           setColorFilter(response.data)
           setSortFilter(response.data)
