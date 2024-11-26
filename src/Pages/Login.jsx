@@ -51,7 +51,12 @@ function Login() {
     }
   }
 
-
+  const config = {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    withCredentials: true, // Important for sending cookies
+  };
 
 
   const handleSubmit = (e) => {
@@ -63,7 +68,7 @@ function Login() {
           axios.post('https://ecommerce-backend-fpas.onrender.com/api/user/login',{
             userEmail:userEmail.current.value,
             userPwd:userPwd.current.value,
-          })
+          },config)
           .then((response)=>{
             console.log(response.data);
           })
