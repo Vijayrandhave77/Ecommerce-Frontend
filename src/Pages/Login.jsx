@@ -57,7 +57,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const token = Cookies.get("jwtToken")
+    const token = Cookies.get("https://ecommerce-frontend-nine-kappa.vercel.app")
     console.log("final",token)
 
 
