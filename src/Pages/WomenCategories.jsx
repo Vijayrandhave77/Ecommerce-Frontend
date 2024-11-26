@@ -28,7 +28,7 @@ function WomenCategories() {
 
   useEffect(() => {
     axios
-      .get('https://ecommerce-backend-fpas.onrender.com/api/womandata')
+      .get('api/womandata')
       .then((response) => {
         setSizeFilter(response.data);
         setColorFilter(response.data)

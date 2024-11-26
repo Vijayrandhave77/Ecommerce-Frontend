@@ -14,7 +14,7 @@ function ManCategoriesCart() {
   const [McartData,setMcartData] = useState([]);
 
   useEffect(()=>{
-    axios.get('https://ecommerce-backend-fpas.onrender.com/api/mandata')
+    axios.get('api/mandata')
     .then((response)=>{
       setMcartData(response.data)
     })

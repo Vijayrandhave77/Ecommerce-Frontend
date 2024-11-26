@@ -60,7 +60,7 @@ function Login() {
 
       if(userEmailvalidation()){
         if(passwordvalidation()){
-          axios.post('https://ecommerce-backend-fpas.onrender.com/api/user/login',{
+          axios.post('api/user/login',{
             userEmail:userEmail.current.value,
             userPwd:userPwd.current.value,
           })
