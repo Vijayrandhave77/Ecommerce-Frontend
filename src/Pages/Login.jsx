@@ -86,8 +86,9 @@ function Login() {
   const [gtoken,setToken] = useState("")
 
   useEffect(()=>{
-    const token = Cookies.get("https://ecommerce-frontend-nine-kappa.vercel.app")
+    const token = Cookies.get("jwtToken")
     setToken(token)
+    console.log("useeffecyt",token)
   dispatch(DTOKEN(token));
 
   },[handleSubmit])
