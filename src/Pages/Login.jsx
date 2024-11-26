@@ -57,9 +57,6 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const token = Cookies.get('jwtToken')
-    console.log("final",token)
-
 
       if(userEmailvalidation()){
         if(passwordvalidation()){
@@ -86,7 +83,7 @@ function Login() {
   const [gtoken,setToken] = useState("")
 
   useEffect(()=>{
-    const token = Cookies.get('jwtToken')
+    const token = Cookies.set('Test',"this is for a testing purpus")
     setToken(token)
     console.log("useeffecyt",token)
   dispatch(DTOKEN(token));
@@ -108,7 +105,7 @@ function Login() {
             <button type="submit">LOGIN</button>
         </form> <br /><br />
         <p>Forget your password? <span>Rest here</span></p> <br />
-        <p>Have trouble logging in? <span>Get Help</span></p>
+        <p >Have trouble logging in? <span>Get Help</span></p>
       </div>
       <ToastContainer />
     </div>
