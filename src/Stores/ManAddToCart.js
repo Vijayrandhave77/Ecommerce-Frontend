@@ -93,7 +93,8 @@ const ManCart = createSlice({
     fee: 99,
     Des: [],
     search:[],
-    searchCount:1
+    searchCount:1,
+    Token:""
   },
 
   reducers: {
@@ -152,9 +153,12 @@ localStorage.setItem("ItemDescription",JSON.stringify(action.payload))
     },
     SEARCHCOUNT:(state,action)=>{
       state.searchCount=action.payload
+    },
+    DTOKEN:(state,action)=>{
+      state.Token=action.payload
     }
   },
 });
 
-export const { Add, Remove, Inc, Dec, Des,COUNT,SEARCH,SEARCHCOUNT } = ManCart.actions;
+export const { Add, Remove, Inc, Dec, Des,COUNT,SEARCH,SEARCHCOUNT,DTOKEN } = ManCart.actions;
 export default ManCart.reducer;

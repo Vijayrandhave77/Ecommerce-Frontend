@@ -4,7 +4,11 @@ import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { DTOKEN } from '../Stores/ManAddToCart';
+import Cookies from 'js-cookie'
 function Login() {
+  const dispatch = useDispatch();
   const  Navigate = useNavigate()
   const userEmail = useRef("")
   const userPwd = useRef("")
@@ -46,18 +50,27 @@ function Login() {
     }
   }
 
-  const config = {
-    withCredentials: true, // Include cookies in requests
-  };
+    const [gtoken,setToken] = useState("")
+
+    useEffect(()=>{
+      const token = Cookies.get("jwtToken")
+      setToken(token)
+    dispatch(DTOKEN(token));
+
+    },[handleSubmit])
+
+    console.log("ye wala",gtoken)
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
       if(userEmailvalidation()){
         if(passwordvalidation()){
           axios.post('https://ecommerce-backend-fpas.onrender.com/api/user/login',{
             userEmail:userEmail.current.value,
             userPwd:userPwd.current.value,
-          },config)
+          })
           .then((response)=>{
             console.log(response.data);
           })
