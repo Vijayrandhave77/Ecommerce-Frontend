@@ -57,6 +57,10 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const token = Cookies.get("jwtToken")
+    console.log("final",token)
+
+
       if(userEmailvalidation()){
         if(passwordvalidation()){
           axios.post('https://ecommerce-backend-fpas.onrender.com/api/user/login',{
@@ -84,12 +88,11 @@ function Login() {
   useEffect(()=>{
     const token = Cookies.get("jwtToken")
     setToken(token)
-    console.log(token)
   dispatch(DTOKEN(token));
 
   },[handleSubmit])
 
-  console.log("ye wala",gtoken)
+  
 
 
   return (
