@@ -88,10 +88,13 @@ function Login() {
   // const [gtoken,setToken] = useState("")
 
   useEffect(()=>{
-    const token = Cookies.get('jwtTokenCookies')
+    // const token = Cookies.get('jwtTokenCookies')
     // setToken(token)
-    console.log("useeffecyt",token)
+    // console.log("useeffecyt",token)
   // dispatch(DTOKEN(token));
+    fetch('https://api.vercel.com/v6/deployments').then((response)=>response.json()).then((data)=>{
+      console.log(data)
+    })
 
   },[handleSubmit])
 
