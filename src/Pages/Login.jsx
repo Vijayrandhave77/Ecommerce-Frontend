@@ -57,7 +57,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const token = Cookies.get("jwtToken")
+    const token = Cookies.get('jwtToken')
     console.log("final",token)
 
 
@@ -86,12 +86,12 @@ function Login() {
   const [gtoken,setToken] = useState("")
 
   useEffect(()=>{
-    const token = Cookies.get("jwtToken")
+    const token = Cookies.get('jwtToken')
     setToken(token)
     console.log("useeffecyt",token)
   dispatch(DTOKEN(token));
 
-  },[handleSubmit])
+  },[])
 
   
 

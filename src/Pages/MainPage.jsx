@@ -12,7 +12,7 @@ import { useEffect } from 'react'
 
 function MainPage() {
   useEffect(()=>{
-    const token = Cookies.get("jwtToken")
+    const token = Cookies.get('jwtToken')
  console.log("main",token)
 
   },[])
