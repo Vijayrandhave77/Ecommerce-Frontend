@@ -84,6 +84,7 @@ function Login() {
   useEffect(()=>{
     const token = Cookies.get("jwtToken")
     setToken(token)
+    console.log(token)
   dispatch(DTOKEN(token));
 
   },[handleSubmit])
