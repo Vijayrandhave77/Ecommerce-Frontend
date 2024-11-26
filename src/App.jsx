@@ -23,8 +23,17 @@ import HealthCategories from "./Pages/HealthCategories";
 import Login from "./Pages/Login";
 import Signin from "./Pages/Signin";
 import { useSelector } from "react-redux";
+import Cookies from "js-cookie";
+import { useEffect } from "react";
 
 function App() {
+
+    useEffect(()=>{
+    const token = Cookies.get('jwtToken')
+    console.log("useeffecyt",token)
+  },[])
+
+
   let searchCount = useSelector((state) => state.ManAddToCart.searchCount);
 
   const router = createBrowserRouter(

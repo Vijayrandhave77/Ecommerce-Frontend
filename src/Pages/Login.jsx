@@ -5,11 +5,11 @@ import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { DTOKEN } from '../Stores/ManAddToCart';
-import Cookies from 'js-cookie'
+// import { useDispatch } from 'react-redux';
+// import { DTOKEN } from '../Stores/ManAddToCart';
+// import Cookies from 'js-cookie'
 function Login() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const  Navigate = useNavigate()
   const userEmail = useRef("")
   const userPwd = useRef("")
@@ -80,15 +80,15 @@ function Login() {
       }
   };
 
-  const [gtoken,setToken] = useState("")
+  // const [gtoken,setToken] = useState("")
 
-  useEffect(()=>{
-    const token = Cookies.get('jwtToken')
-    setToken(token)
-    console.log("useeffecyt",token)
-  dispatch(DTOKEN(token));
+  // useEffect(()=>{
+  //   const token = Cookies.get('jwtToken')
+  //   setToken(token)
+  //   console.log("useeffecyt",token)
+  // dispatch(DTOKEN(token));
 
-  },[handleSubmit])
+  // },[handleSubmit])
 
   
 
