@@ -156,6 +156,7 @@ localStorage.setItem("ItemDescription",JSON.stringify(action.payload))
     },
     DTOKEN:(state,action)=>{
       state.Token=action.payload
+      console.log("stroe",state.Token)
     }
   },
 });

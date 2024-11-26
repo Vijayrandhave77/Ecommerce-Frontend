@@ -51,16 +51,7 @@ function Login() {
     }
   }
 
-    const [gtoken,setToken] = useState("")
 
-    useEffect(()=>{
-      const token = Cookies.get("jwtToken")
-      setToken(token)
-    dispatch(DTOKEN(token));
-
-    },[handleSubmit])
-
-    console.log("ye wala",gtoken)
 
 
   const handleSubmit = (e) => {
@@ -88,6 +79,16 @@ function Login() {
       }
   };
 
+  const [gtoken,setToken] = useState("")
+
+  useEffect(()=>{
+    const token = Cookies.get("jwtToken")
+    setToken(token)
+  dispatch(DTOKEN(token));
+
+  },[handleSubmit])
+
+  console.log("ye wala",gtoken)
 
 
   return (
