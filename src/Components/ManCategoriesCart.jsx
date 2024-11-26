@@ -14,7 +14,7 @@ function ManCategoriesCart() {
   const [McartData,setMcartData] = useState([]);
 
   useEffect(()=>{
-    axios.get('api/mandata')
+    axios.get('/api/mandata')
     .then((response)=>{
       setMcartData(response.data)
     })

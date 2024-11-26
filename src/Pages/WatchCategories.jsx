@@ -34,7 +34,7 @@ function WatchCategories() {
 
   useEffect(() => {
     axios
-      .get('api/watchdata')
+      .get('/api/watchdata')
       .then((response) => {
         setColorFilter(response.data);
         setSortFilter(response.data);

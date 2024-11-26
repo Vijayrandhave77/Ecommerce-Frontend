@@ -28,7 +28,7 @@ function WomenCategories() {
 
   useEffect(() => {
     axios
-      .get('api/womandata')
+      .get('/api/womandata')
       .then((response) => {
         setSizeFilter(response.data);
         setColorFilter(response.data)

@@ -54,7 +54,7 @@ function Signin() {
     if(namevalidation()){
       if(userEmailvalidation()){
         if(passwordvalidation()){
-          axios.post('api/user/signin',{
+          axios.post('/api/user/signin',{
             userName: userName.current.value,
             userEmail: userEmail.current.value,
             userPwd: userPwd.current.value,

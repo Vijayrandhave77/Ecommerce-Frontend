@@ -27,7 +27,7 @@ function ShoesCategories() {
 
     useEffect(() => {
       axios
-        .get('api/shoesdata')
+        .get('/api/shoesdata')
         .then((response) => {
           setColorFilter(response.data)
           setSortFilter(response.data)

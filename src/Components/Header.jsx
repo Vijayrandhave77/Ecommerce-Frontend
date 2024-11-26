@@ -28,7 +28,7 @@ const searchfilter = searchData.filter((sf) =>
     dispatch(SEARCHCOUNT(search.length))
   }
 useEffect(() => {
-  axios.get("api/searchdata")
+  axios.get("/api/searchdata")
     .then((response) => {
       setSearchData(response.data);
     })
