@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { RiMenuAddLine } from "react-icons/ri";
+import Loaders from "../Components/Loaders";
 import { useEffect, useState } from "react";
 import {Add,Des} from '../Stores/ManAddToCart'
 import { useDispatch } from "react-redux";
@@ -88,7 +89,9 @@ function AccessCategories() {
       </div>
       <div className="WomenCategoriesContainer">
       <div className="WomenCategoriesContainer">
-        {accessData.map((data) => (
+        {
+          accessData.length==0 ? <Loaders></Loaders> :  <div>
+            {accessData.map((data) => (
           <div className="man-cart-items" key={data._id}>
             <NavLink to="/itemDisc" onClick={()=>dispatch(Des(data))}>
               <img className="img1" src={data.img1} alt="Not Found" loading="lazy" />
@@ -108,6 +111,10 @@ function AccessCategories() {
             </div>
           </div>
         ))}
+        </div>
+        }
+       
+      
       </div>
       </div>
     </div>

@@ -20,6 +20,7 @@ import AccessCategories from "./Pages/AccessCategories";
 import ToyCategories from "./Pages/ToyCategories";
 import SportsCategories from "./Pages/SportsCategories";
 import HealthCategories from "./Pages/HealthCategories";
+import Loaders from "./Components/Loaders";
 import Login from "./Pages/Login";
 import Signin from "./Pages/Signin";
 import { useSelector } from "react-redux";

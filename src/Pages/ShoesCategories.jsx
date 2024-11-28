@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { RiMenuAddLine } from "react-icons/ri";
+import Loaders from '../Components/Loaders'
 import { useEffect, useState } from "react";
 import {Add,Des} from '../Stores/ManAddToCart'
 import { useDispatch } from "react-redux";
@@ -88,6 +89,9 @@ function ShoesCategories() {
       </div>
       <div className="WomenCategoriesContainer">
         {
+          shoesData.length==0? <Loaders></Loaders> :
+             <div>
+            {
           shoesData.map((data)=>(
                     <div className="man-cart-items" key={data._id}>
           <NavLink to="/itemDisc" onClick={()=>dispatch(Des(data))}>
@@ -109,6 +113,10 @@ function ShoesCategories() {
         </div>
           ))
         }
+        </div>
+        }
+     
+      
 
       </div>
     </div>

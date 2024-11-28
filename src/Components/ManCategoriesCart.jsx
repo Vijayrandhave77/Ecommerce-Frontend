@@ -5,7 +5,7 @@ import {Add,Des} from '../Stores/ManAddToCart'
 import { NavLink } from "react-router-dom";
 import axios from 'axios'
 import { useEffect,useState } from "react";
-
+import  Loaders from './Loaders'
 
 function ManCategoriesCart() {
 
@@ -25,7 +25,9 @@ function ManCategoriesCart() {
   // const McartData = useSelector((state) => state.ManAddToCart.manCartData);
   return (
     <div className="man-categories-cart">
-      {McartData.map((Mcart) => (
+   {
+    McartData.length==0?<Loaders></Loaders>: <div>
+        {McartData.map((Mcart) => (
         <div className="man-cart-items" key={Mcart._id}>
           <NavLink to="/itemDisc" onClick={()=>dispatch(Des(Mcart))}>
             <img className="img1" src={Mcart.img1} alt="Not Found" loading="lazy" />
@@ -45,6 +47,13 @@ function ManCategoriesCart() {
           </div>
         </div>
       ))}
+   </div>
+
+   } 
+  
+ 
+    
+      
     </div>
   );
 }
