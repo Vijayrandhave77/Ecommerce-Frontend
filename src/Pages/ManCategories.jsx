@@ -104,9 +104,8 @@ function ManCategories() {
           ))}
         </ul>
       </div>
-      <div className="WomenCategoriesContainer">
-       {
-        manData.length==0 ? <Loaders></Loaders> :<div>
+      {
+        manData.length==0 ? <Loaders></Loaders>:<div className="WomenCategoriesContainer">
                 {manData.map((data) => (
           <div className="man-cart-items" key={data._id}>
             <NavLink to="/itemDisc" onClick={()=>dispatch(Des(data))}>
@@ -127,11 +126,13 @@ function ManCategories() {
             </div>
           </div>
         ))}
-       </div>
-       }
+        
+      
        
 
       </div>
+      }
+      
     </div>
   );
 }

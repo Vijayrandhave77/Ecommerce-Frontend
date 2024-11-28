@@ -87,11 +87,10 @@ function AccessCategories() {
           ))}
         </ul>
       </div>
-      <div className="WomenCategoriesContainer">
-      <div className="WomenCategoriesContainer">
-        {
-          accessData.length==0 ? <Loaders></Loaders> :  <div>
-            {accessData.map((data) => (
+
+      {
+        accessData.length==0 ? <Loaders></Loaders> : <div className="WomenCategoriesContainer">
+        {accessData.map((data) => (
           <div className="man-cart-items" key={data._id}>
             <NavLink to="/itemDisc" onClick={()=>dispatch(Des(data))}>
               <img className="img1" src={data.img1} alt="Not Found" loading="lazy" />
@@ -111,12 +110,10 @@ function AccessCategories() {
             </div>
           </div>
         ))}
-        </div>
-        }
+      </div>
+      }
+   
        
-      
-      </div>
-      </div>
     </div>
   )
 }

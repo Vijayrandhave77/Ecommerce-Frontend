@@ -24,9 +24,9 @@ function ManCategoriesCart() {
   },[])
   // const McartData = useSelector((state) => state.ManAddToCart.manCartData);
   return (
-    <div className="man-categories-cart">
-   {
-    McartData.length==0?<Loaders></Loaders>: <div>
+    <div>
+      {
+         McartData.length==0?<Loaders></Loaders>:<div className="man-categories-cart">
         {McartData.map((Mcart) => (
         <div className="man-cart-items" key={Mcart._id}>
           <NavLink to="/itemDisc" onClick={()=>dispatch(Des(Mcart))}>
@@ -48,13 +48,20 @@ function ManCategoriesCart() {
         </div>
       ))}
    </div>
+      }
 
-   } 
+  
+
+   
   
  
     
       
+     
     </div>
+
+
+  
   );
 }
 
